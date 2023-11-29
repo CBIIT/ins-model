@@ -73,7 +73,7 @@ Relationships:
         Dst: project
     Props: null
   projects_of_program:
-    Mul: many_to_one
+    Mul: many_to_many
     Ends:
       - Src: project
         Dst: program
