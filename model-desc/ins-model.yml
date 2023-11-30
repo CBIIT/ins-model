@@ -53,12 +53,12 @@ Nodes:
       - pmid
       - title
       - authors
-      - publication_year  # to be able to generate pie chart pubs by year
+      - publication_year  # to be able to generate donut chart pubs by year
       - publication_date
       - cited_by  # before was citation_count
-      - cited_by_category  # to be able to generate pie chart pubs by citations
+      - cited_by_category  # to be able to generate donut chart pubs by citations
       - relative_citation_ratio
-      - rcr_range  # to be able to generate pie chart pubs by RCR range
+      - rcr_range  # to be able to generate donut chart pubs by RCR range
 Relationships:
   has_publication:
     Mul: many_to_many
