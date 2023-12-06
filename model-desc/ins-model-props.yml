@@ -201,7 +201,7 @@ PropDefinitions:
     Private: true  # not displayed
   #properties of project:
   queried_project_id:
-    Desc: core id (no leading numeral or suffxi)
+    Desc: core id (no leading numeral or suffix)
     Src: None
     Type: string
     Req: true
@@ -334,5 +334,11 @@ PropDefinitions:
         - "2 to 5"
         - "> 5"
     Req: false
+    Private: false
+  queried_project_id:
+    Desc: core id (no leading numeral or suffix)
+    Src: None
+    Type: string
+    Req: true
     Private: false
   
