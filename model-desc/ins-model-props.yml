@@ -10,13 +10,13 @@ PropDefinitions:
     Desc: program acronym
     Src: None
     Type: string
-    Req: true
+    Req: false  # not always provided by ODS
     Private: false
   focus_area:
     Desc: one of several focus areas, e.g., Moonshot, Clinical Networks, Pediatric/AYA, etc.
     Src: None
     Type: string  # list
-    Req: true
+    Req: false  # not always provided by ODS
     Private: false
   doc:
     Desc: division/office/center
@@ -28,55 +28,55 @@ PropDefinitions:
     Desc: principal investigator to contact
     Src: None
     Type: string
-    Req: true
+    Req: false  # not always provided by ODS
     Private: false
   contact_pi_email:
     Desc: contact principal investigator email
     Src: None
     Type: string
-    Req: true
+    Req: false  # not always provided by ODS
     Private: true  # not displayed
   contact_nih:
     Desc: nih contact, typically the program officer
     Src: None
     Type: string
-    Req: true
+    Req: false  # not always provided by ODS
     Private: false
   contact_nih_email:
     Desc: nih contact email
     Src: None
     Type: string
-    Req: true
+    Req: false  # not always provided by ODS
     Private: true  # not displayed
   nofo:
     Desc: list of notice of funding opportunities belonging to this program
     Src: None
     Type: string  # list
-    Req: true
+    Req: false  # not always provided by ODS
     Private: false
   award:
     Desc: list of awards belonging to this program
     Src: None
     Type: string  # list
-    Req: true
+    Req: false  # not always provided by ODS
     Private: false
   program_link:
     Desc: URL to the program page
     Src: None
     Type: string
-    Req: true
+    Req: false  # not always provided by ODS
     Private: false
   data_link:
     Desc: URL to the program's data
     Src: None
     Type: string
-    Req: true
+    Req: false  # not always provided by ODS
     Private: true  # not displayed
   cancer_type:
     Desc: main focus of program, e.g., bladder, brain, broadly cancer, etc. 
     Src: None
     Type: string
-    Req: true
+    Req: false  # not always provided by ODS
     Private: false                  
   #properties of grant:
   project_id: 
