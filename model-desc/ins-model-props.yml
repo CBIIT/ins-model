@@ -273,12 +273,6 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  year:
-    Desc: publication year
-    Src: None
-    Type: Int
-    Req: true
-    Private: false
   title:
     Desc: publication title
     Src: None

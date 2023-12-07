@@ -54,8 +54,7 @@ Nodes:
       - pmid
       - title
       - authors
-      - publication_year  # to be able to generate donut chart pubs by year
-      - publication_date
+      - publication_date  # year can be derived from here for donut chart publications by year
       - cited_by  # before was citation_count
       - cited_by_category  # to be able to generate donut chart pubs by citations
       - relative_citation_ratio
