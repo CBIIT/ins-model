@@ -1,6 +1,7 @@
 Nodes:
   program:
     Props:
+      - program_id
       - program_name
       - program_acronym
       - focus_area
@@ -16,8 +17,7 @@ Nodes:
       - cancer_type
   grant:
     Props:
-      - grant_id  # this has the leading numeral, suffix, everything (can't tie publications to it)
-      - project.project_id 
+      - grant_id  # this has the leading numeral and suffix
       - application_id  # not displayed
       - fiscal_year
       - grant_title
@@ -56,10 +56,7 @@ Nodes:
       - authors
       - publication_date  # year can be derived from here for donut chart publications by year
       - cited_by  # before was citation_count
-      - cited_by_category  # to be able to generate donut chart pubs by citations
       - relative_citation_ratio
-      - rcr_range  # to be able to generate donut chart pubs by RCR range
-      - project.project_id
 Relationships:
   has_publication:
     Mul: many_to_many
