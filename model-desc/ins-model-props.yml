@@ -130,7 +130,7 @@ PropDefinitions:
     Req: true
     Private: false
   grant_title:
-    Desc: project title
+    Desc: grant title
     Type: string
     Req: true
     Private: false
