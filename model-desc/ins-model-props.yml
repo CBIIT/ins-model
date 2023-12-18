@@ -1,5 +1,10 @@
 PropDefinitions:
   #properties of program:
+  program_id:
+    Desc: program id
+    Type: string
+    Req: true
+    Private: true
   program_name:
     Desc: program name
     Type: string
