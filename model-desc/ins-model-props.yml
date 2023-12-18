@@ -109,7 +109,7 @@ PropDefinitions:
     Req: false  # not always provided by ODS
     Private: false                  
   #properties of grant:
-  project_id: 
+  grant_id: 
     Desc: full id with leading numeral and suffix
     Type: string
     Req: true
@@ -124,7 +124,7 @@ PropDefinitions:
     Type: Int
     Req: true
     Private: false
-  project_title:
+  grant_title:
     Desc: project title
     Type: string
     Req: true
@@ -205,7 +205,7 @@ PropDefinitions:
     Req: true
     Private: true  # not displayed
   #properties of project:
-  queried_project_id:
+  project_id:
     Desc: core id (no leading numeral or suffix)
     Type: string
     Req: true
