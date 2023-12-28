@@ -31,7 +31,6 @@ Nodes:
       - project_start_date  # not displayed
       - project_end_date
       - opportunity_number  # not displayed
-      - api_source_search  # not displayed
       - org_name  # not displayed
       - org_city  # not displayed
       - org_state  # not displayed
@@ -44,7 +43,6 @@ Nodes:
       - project_start_date
       - project_end_date
       - opportunity_number
-      - api_source_search  # not displayed
       - org_name
       - org_city  # not displayed
       - org_state  # not displayed

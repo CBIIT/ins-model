@@ -204,11 +204,6 @@ PropDefinitions:
     Type: string
     Req: true
     Private: true  # not displayed
-  api_source_search:
-    Desc: search term used in API
-    Type: string
-    Req: true
-    Private: true  # not displayed
   #properties of project:
   project_id:
     Desc: core id (no leading numeral or suffix)
@@ -260,11 +255,6 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  api_source_search:
-    Desc: search term used in API
-    Type: string
-    Req: true
-    Private: true  # not displayed
   #properties of publication:
   pmid:
     Desc: PubMed ID
