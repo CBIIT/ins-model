@@ -252,7 +252,7 @@ PropDefinitions:
     Private: false
   opportunity_number:
     Desc: specific nofo of this project
-    Type: string
+    Type: string  # list 
     Req: true
     Private: false
   #properties of publication:
