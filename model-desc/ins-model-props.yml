@@ -33,20 +33,7 @@ PropDefinitions:
     Private: false
   doc:
     Desc: division/office/center
-    Type:
-      value_type: list
-      Enum:
-        - CCG
-        - CIB
-        - CRCHD
-        - CTEP
-        - DCB
-        - DCCPS
-        - DCEG
-        - DCP
-        - DCTD
-        - NIH/OD
-        - OHAM
+    Type: string
     Req: true
     Private: false
   contact_pi:
