@@ -15,7 +15,6 @@ Nodes:
       - award
       - program_link
       - data_link  # not displayed
-      - cancer_type
   grant:
     Props:
       - grant_id  # this has the leading numeral and suffix

@@ -17,19 +17,33 @@ PropDefinitions:
     Req: false  # not always provided by ODS
     Private: false
   focus_area:
-    Desc: one of several focus areas, e.g., Moonshot, Clinical Networks, Pediatric/AYA, etc.
+    Desc: one of several focus areas (combines old focus area and cancer types)
     Type:
       value_type: list
       Enum:
-        - Cancer Center
-        - Cancer Moonshot
-        - Clinical Networks
-        - DCC
+        - Bladder Cancer
+        - Brain Cancer
+        - Breast Cancer
+        - Broad Cancer Types
+        - Cervical Cancer
+        - Colorectal Cancer
+        - Esophageal Cancer
+        - Gastric Cancer
         - HIV/AIDS
+        - Health Disparities
+        - Kidney Cancer
+        - Leukemia
+        - Liver Cancer
+        - Lung Cancer
+        - Lymphoma
+        - Multiple Myeloma
+        - Osteosarcoma
+        - Ovarian Cancer
+        - Pancreas Cancer
         - Pediatric/AYA
         - SPORE
-        - Health Disparities
-    Req: false  # not always provided by ODS
+        - Thyroid Cancer
+    Req: true
     Private: false
   doc:
     Desc: division/office/center
@@ -75,32 +89,7 @@ PropDefinitions:
     Desc: URL to the program's data
     Type: string
     Req: false  # not always provided by ODS
-    Private: true  # not displayed
-  cancer_type:
-    Desc: main focus of program, e.g., bladder, brain, broadly cancer, etc.
-    Type:
-      value_type: list
-      Enum:
-        - Bladder Cancer
-        - Brain Cancer
-        - Breast Cancer
-        - Cervical Cancer
-        - Colorectal Cancer
-        - Esophageal Cancer
-        - Gastric Cancer
-        - Kidney Cancer
-        - Leukemia
-        - Multiple Myeloma
-        - Liver Cancer
-        - Lung Cancer
-        - Lymphoma
-        - Ovarian Cancer
-        - Pancreas Cancer
-        - Focus on Cancer Broadly
-        - Lymphoma
-        - Thyroid Cancer
-    Req: false  # not always provided by ODS
-    Private: false                  
+    Private: true  # not displayed                
   #properties of grant:
   grant_id: 
     Desc: full id with leading numeral and suffix
