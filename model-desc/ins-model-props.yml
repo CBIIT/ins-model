@@ -48,7 +48,7 @@ PropDefinitions:
     Private: false
   doc:
     Desc: division/office/center
-    Type: string
+    Type: string # list
     Req: true
     Private: false
   contact_pi:
