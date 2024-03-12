@@ -1,5 +1,11 @@
+Version: v1.0.0
 PropDefinitions:
   #properties of program:
+  program_id:
+    Desc: program id
+    Type: string
+    Req: true
+    Private: true
   program_name:
     Desc: program name
     Type: string
@@ -11,36 +17,38 @@ PropDefinitions:
     Req: false  # not always provided by ODS
     Private: false
   focus_area:
-    Desc: one of several focus areas, e.g., Moonshot, Clinical Networks, Pediatric/AYA, etc.
+    Desc: one of several focus areas (combines old focus area and cancer types)
     Type:
       value_type: list
       Enum:
-        - Cancer Center
+        - Bladder Cancer
+        - Brain Cancer
+        - Breast Cancer
+        - Broad Cancer Types
         - Cancer Moonshot
-        - Clinical Networks
-        - DCC
+        - Cervical Cancer
+        - Colorectal Cancer
+        - Esophageal Cancer
+        - Gastric Cancer
         - HIV/AIDS
+        - Health Disparities
+        - Kidney Cancer
+        - Leukemia
+        - Liver Cancer
+        - Lung Cancer
+        - Lymphoma
+        - Multiple Myeloma
+        - Osteosarcoma
+        - Ovarian Cancer
+        - Pancreas Cancer
         - Pediatric/AYA
         - SPORE
-        - Health Disparities
-    Req: false  # not always provided by ODS
+        - Thyroid Cancer
+    Req: true
     Private: false
   doc:
     Desc: division/office/center
-    Type:
-      value_type: list
-      Enum:
-        - CCG
-        - CIB
-        - CRCHD
-        - CTEP
-        - DCB
-        - DCCPS
-        - DCEG
-        - DCP
-        - DCTD
-        - NIH/OD
-        - OHAM
+    Type: string
     Req: true
     Private: false
   contact_pi:
@@ -82,39 +90,9 @@ PropDefinitions:
     Desc: URL to the program's data
     Type: string
     Req: false  # not always provided by ODS
-    Private: true  # not displayed
-  cancer_type:
-    Desc: main focus of program, e.g., bladder, brain, broadly cancer, etc.
-    Type:
-      value_type: list
-      Enum:
-        - Bladder Cancer
-        - Brain Cancer
-        - Breast Cancer
-        - Broad Cancer Types
-        - Cancer Moonshot
-        - Cervical Cancer
-        - Colorectal Cancer
-        - Esophageal Cancer
-        - Gastric Cancer
-        - HIV/AIDS
-        - Health Disparities
-        - Kidney Cancer
-        - Leukemia
-        - Liver Cancer
-        - Lung Cancer
-        - Lymphoma
-        - Multiple Myeloma
-        - Osteosarcoma
-        - Ovarian Cancer
-        - Pancreas Cancer
-        - Pediatric/AYA
-        - SPORE
-        - Thyroid Cancer
-    Req: false  # not always provided by ODS
-    Private: false                  
+    Private: true  # not displayed                
   #properties of grant:
-  project_id: 
+  grant_id: 
     Desc: full id with leading numeral and suffix
     Type: string
     Req: true
@@ -137,12 +115,12 @@ PropDefinitions:
   abstract_text:
     Desc: project description text
     Type: string
-    Req: true
+    Req: false
     Private: true  # not displayed
   keywords:
     Desc: project keywords
     Type: string  # list
-    Req: true
+    Req: false
     Private: true  # not displayed
   org_name:
     Desc: organization of grantee
@@ -152,17 +130,17 @@ PropDefinitions:
   org_city:
     Desc: organization city
     Type: string
-    Req: true
+    Req: false
     Private: true  # not displayed
   org_state:
     Desc: organization state
     Type: string
-    Req: true
+    Req: false
     Private: true  # not displayed
   org_country:
     Desc: organization country
     Type: string
-    Req: true
+    Req: false
     Private: true  # not displayed
   principal_investigators:
     Desc: list of principal investigators
@@ -172,7 +150,7 @@ PropDefinitions:
   program_officers:
     Desc: program officer(s)
     Type: string
-    Req: true
+    Req: false
     Private: false
   award_amount:
     Desc: total award money granted
@@ -187,30 +165,25 @@ PropDefinitions:
   award_notice_date:
     Desc: date grant was awarded
     Type: Date
-    Req: true
+    Req: false
     Private: true  # not displayed
   project_start_date:
     Desc: project start date (of core project)
     Type: Date
-    Req: true
+    Req: false
     Private: true  # not displayed
   project_end_date:
     Desc: project end date (of core project)
     Type: Date
-    Req: true
+    Req: false
     Private: false
   opportunity_number:
     Desc: specific nofo of this grant
     Type: string
-    Req: true
-    Private: true  # not displayed
-  api_source_search:
-    Desc: search term used in API
-    Type: string
-    Req: true
+    Req: false
     Private: true  # not displayed
   #properties of project:
-  queried_project_id:
+  project_id:
     Desc: core id (no leading numeral or suffix)
     Type: string
     Req: true
@@ -223,7 +196,7 @@ PropDefinitions:
   abstract_text:
     Desc: project description
     Type: string
-    Req: true
+    Req: false
     Private: false
   org_name:
     Desc: organization of grantee
@@ -233,38 +206,33 @@ PropDefinitions:
   org_city:
     Desc: organization city
     Type: string
-    Req: true
+    Req: false
     Private: true  # not displayed
   org_state:
     Desc: organization state
     Type: string
-    Req: true
+    Req: false
     Private: true  # not displayed
   org_country:
     Desc: organization country
     Type: string
-    Req: true
+    Req: false
     Private: true  # not displayed
   project_start_date:
     Desc: project start date (of core project)
     Type: Date
-    Req: true
+    Req: false
     Private: false
   project_end_date:
     Desc: project end date (of core project)
     Type: Date
-    Req: true
+    Req: false
     Private: false
   opportunity_number:
     Desc: specific nofo of this project
-    Type: string
-    Req: true
+    Type: string  # list 
+    Req: false
     Private: false
-  api_source_search:
-    Desc: search term used in API
-    Type: string
-    Req: true
-    Private: true  # not displayed
   #properties of publication:
   pmid:
     Desc: PubMed ID
