@@ -1,4 +1,4 @@
-Version: v1.0.0
+Version: v1.0.1
 Nodes:
   program:
     Props:
@@ -6,6 +6,7 @@ Nodes:
       - program_name
       - program_acronym
       - focus_area
+      - cancer_type
       - doc
       - contact_pi
       - contact_pi_email  # not displayed

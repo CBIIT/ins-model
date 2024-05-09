@@ -1,4 +1,4 @@
-Version: v1.0.0
+Version: v1.0.1
 PropDefinitions:
   #properties of program:
   program_id:
@@ -17,7 +17,20 @@ PropDefinitions:
     Req: false  # not always provided by ODS
     Private: false
   focus_area:
-    Desc: one of several focus areas (combines old focus area and cancer types)
+    Desc: list of focus areas
+    Type:
+      value_type: list
+      Enum:
+        - Cancer Moonshot
+        - HIV/AIDS
+        - Health Disparities
+        - No Focus Area
+        - Pediatric/AYA
+        - SPORE
+    Req: true
+    Private: false
+  cancer_type:
+    Desc: list of cancer types
     Type:
       value_type: list
       Enum:
@@ -25,13 +38,10 @@ PropDefinitions:
         - Brain Cancer
         - Breast Cancer
         - Broad Cancer Types
-        - Cancer Moonshot
         - Cervical Cancer
         - Colorectal Cancer
         - Esophageal Cancer
         - Gastric Cancer
-        - HIV/AIDS
-        - Health Disparities
         - Kidney Cancer
         - Leukemia
         - Liver Cancer
@@ -41,8 +51,6 @@ PropDefinitions:
         - Osteosarcoma
         - Ovarian Cancer
         - Pancreas Cancer
-        - Pediatric/AYA
-        - SPORE
         - Thyroid Cancer
     Req: true
     Private: false
