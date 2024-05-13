@@ -112,7 +112,7 @@ PropDefinitions:
     Private: true  # not displayed
   fiscal_year:
     Desc: fiscal year project_id was granted
-    Type: Int
+    Type: integer
     Req: true
     Private: false
   project_title:
@@ -162,27 +162,27 @@ PropDefinitions:
     Private: false
   award_amount:
     Desc: total award money granted
-    Type: Int
+    Type: integer
     Req: true
     Private: true  # not displayed
   nci_funded_amount:
     Desc: portion of award funded by NCI
-    Type: Int
+    Type: integer
     Req: true
     Private: true  # not displayed
   award_notice_date:
     Desc: date grant was awarded
-    Type: Date
+    Type: date
     Req: false
     Private: true  # not displayed
   project_start_date:
     Desc: project start date (of core project)
-    Type: Date
+    Type: date
     Req: false
     Private: true  # not displayed
   project_end_date:
     Desc: project end date (of core project)
-    Type: Date
+    Type: date
     Req: false
     Private: false
   opportunity_number:
@@ -228,12 +228,12 @@ PropDefinitions:
     Private: true  # not displayed
   project_start_date:
     Desc: project start date (of core project)
-    Type: Date
+    Type: date
     Req: false
     Private: false
   project_end_date:
     Desc: project end date (of core project)
-    Type: Date
+    Type: date
     Req: false
     Private: false
   opportunity_number:
@@ -259,16 +259,16 @@ PropDefinitions:
     Private: false
   publication_date:
     Desc: publication date
-    Type: Date
+    Type: date
     Req: true
     Private: false
   cited_by:
     Desc: number of citations 
-    Type: Int
+    Type: integer
     Req: false
     Private: false
   relative_citation_ratio:
     Desc: relative citation ratio (RCR)
-    Type: Float
+    Type: number
     Req: false
     Private: false  
