@@ -1,4 +1,4 @@
-Version: v1.0.1
+Version: v1.1.0
 PropDefinitions:
   #properties of program:
   program_id:
@@ -272,3 +272,119 @@ PropDefinitions:
     Type: Float
     Req: false
     Private: false  
+  #properties of dataset:
+  title:
+    Desc: dataset title
+    Type: string
+    Req: true
+    Private: false
+  description:
+    Desc: dataset description
+    Type: string
+    Req: true
+    Private: false
+  dbGaP_phs:
+    Desc: dbGaP accession number (e.g., phs001234)
+    Type: string
+    Req: true
+    Private: false
+  dbGaP_URL:
+    Desc: dbGaP study web page URL without the version part (e.g., https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001234)
+    Type: string
+    Req: true
+    Private: false
+  POC_name:
+    Desc: dataset point of contact name, typically the PI
+    Type: string
+    Req: true
+    Private: false
+  POC_email:
+    Desc: dataset point of contact email, typically the PI's email
+    Type: string
+    Req: true
+    Private: false
+  dataset_publication:
+    Desc: any publication PMIDs associated with the dataset
+    Type: string  # list
+    Req: false  # there may not be any associated publications
+    Private: false
+  funding_source:
+    Desc: any grant IDs funding the dataset
+    Type: string  # list
+    Req: false  # there may not be any funding sources found
+    Private: false
+  release_date:
+    Desc: dataset release date (for dbGaP, found under the Authorized Access section)
+    Type: Date
+    Req: true
+    Private: false
+  limitations_for_reuse:
+    Desc: dataset use restrictions
+    Type: string
+    Req: true
+    Private: false
+  assay_method:
+    Desc: sequencing assay method(s) (e.g., WES, WGS, RNA-Seq)
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  data_type:
+    Desc: data type(s) that corresponds to the dataset study purpose (e.g., genomics, imaging)
+    Type: string  # list
+    Req: true
+    Private: false
+  study_type:
+    Desc: study type (for dbGaP, found under the Study Description section)
+    Type: string
+    Req: true
+    Private: false
+  analyte_type:
+    Desc: analyte type(s) (e.g., DNA, RNA)
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  disease:
+    Desc: primary disease(s) of study 
+    Type: string  # list
+    Req: true
+    Private: false
+  anatomic_site:
+    Desc: tumor anatomic location(s) or sample anatomic site(s) 
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  age:
+    Desc: age group counts in groups of x years (x TBD)
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  sex:
+    Desc: participant sex count as provided
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  ethnicity:
+    Desc: participant ethnicity count
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  race:
+    Desc: participant race count
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  sample_is_normal:
+    Desc: sample is normal or tumor count (yes or no); sometimes sample_is_tumor is provided so careful with this
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  participant_count:
+    Desc: number of participants in dataset
+    Type: Int
+    Req: true
+    Private: false
+  sample_count:
+    Desc: number of samples in dataset
+    Type: Int
+    Req: false  # may not be available
+    Private: false
