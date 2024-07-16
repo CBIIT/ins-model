@@ -1,0 +1,12 @@
+<html>
+  <head></head>
+  <body>
+    <ul>
+      <li> <a href="./ins-model.yaml">{{ mdf }}</a></li>
+      <li> <a href="./ins-model-props.yaml">{{ mdf }}</a></li>
+      <li> <a href="./ins-model.svg">{{ base }}.svg</a></li>
+      <li> <a href="./ins-model.txt">{{ base }}.txt</a></li>  
+    </ul>
+    <p>
+  </body>
+</html>
