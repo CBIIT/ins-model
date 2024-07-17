@@ -116,12 +116,12 @@ PropDefinitions:
     Type: Int
     Req: true
     Private: false
-  project_title:
+  grant.project_title:
     Desc: project title
     Type: string
     Req: true
     Private: false
-  abstract_text:
+  grant.abstract_text:
     Desc: project description text
     Type: string
     Req: false
@@ -131,22 +131,22 @@ PropDefinitions:
     Type: string  # list
     Req: false
     Private: true  # not displayed
-  org_name:
+  grant.org_name:
     Desc: organization of grantee
     Type: string
     Req: true
     Private: true  # not displayed
-  org_city:
+  grant.org_city:
     Desc: organization city
     Type: string
     Req: false
     Private: true  # not displayed
-  org_state:
+  grant.org_state:
     Desc: organization state
     Type: string
     Req: false
     Private: true  # not displayed
-  org_country:
+  grant.org_country:
     Desc: organization country
     Type: string
     Req: false
@@ -197,22 +197,32 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  org_name:
+  project.project_title:
+    Desc: project title
+    Type: string
+    Req: true
+    Private: false
+  project.abstract_text:
+    Desc: project description text
+    Type: string
+    Req: false
+    Private: false
+  project.org_name:
     Desc: organization of grantee
     Type: string
     Req: true
     Private: false
-  org_city:
+  project.org_city:
     Desc: organization city
     Type: string
     Req: false
     Private: true  # not displayed
-  org_state:
+  project.org_state:
     Desc: organization state
     Type: string
     Req: false
     Private: true  # not displayed
-  org_country:
+  project.org_country:
     Desc: organization country
     Type: string
     Req: false
