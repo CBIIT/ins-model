@@ -319,8 +319,8 @@ PropDefinitions:
     Req: true
     Private: false
   limitations_for_reuse:
-    Desc: dataset use restrictions
-    Type: string
+    Desc: dataset use restriction(s)
+    Type: string  # list
     Req: true
     Private: false
   assay_method:
@@ -334,8 +334,8 @@ PropDefinitions:
     Req: true
     Private: false
   study_type:
-    Desc: study type (for dbGaP, found under the Study Description section)
-    Type: string
+    Desc: study type(s) (for dbGaP, found under the Study Description section)
+    Type: string  # list
     Req: true
     Private: false
   analyte_type:
