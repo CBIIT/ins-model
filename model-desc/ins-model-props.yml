@@ -270,6 +270,6 @@ PropDefinitions:
     Private: false
   relative_citation_ratio:
     Desc: relative citation ratio (RCR)
-    Type: Float
+    Type: number
     Req: false
     Private: false  
