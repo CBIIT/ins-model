@@ -176,17 +176,17 @@ PropDefinitions:
     Type: Date
     Req: false
     Private: true  # not displayed
-  project_start_date:
+  grant.project_start_date:
     Desc: project start date (of core project)
     Type: Date
     Req: false
     Private: true  # not displayed
-  project_end_date:
+  grant.project_end_date:
     Desc: project end date (of core project)
     Type: Date
     Req: false
     Private: false
-  opportunity_number:
+  grant.opportunity_number:
     Desc: specific nofo of this grant
     Type: string
     Req: false
@@ -227,17 +227,17 @@ PropDefinitions:
     Type: string
     Req: false
     Private: true  # not displayed
-  project_start_date:
+  project.project_start_date:
     Desc: project start date (of core project)
     Type: Date
     Req: false
     Private: false
-  project_end_date:
+  project.project_end_date:
     Desc: project end date (of core project)
     Type: Date
     Req: false
     Private: false
-  opportunity_number:
+  project.opportunity_number:
     Desc: specific nofo of this project
     Type: string  # list 
     Req: false
