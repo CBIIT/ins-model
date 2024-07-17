@@ -113,11 +113,11 @@ PropDefinitions:
     Private: true  # not displayed
   fiscal_year:
     Desc: fiscal year project_id was granted
-    Type: Int
+    Type: integer
     Req: true
     Private: false
-  grant.project_title:
-    Desc: project title
+  grant_title:
+    Desc: grant title
     Type: string
     Req: true
     Private: false
@@ -163,27 +163,27 @@ PropDefinitions:
     Private: false
   award_amount:
     Desc: total award money granted
-    Type: Int
+    Type: integer
     Req: true
     Private: true  # not displayed
   nci_funded_amount:
     Desc: portion of award funded by NCI
-    Type: Int
+    Type: integer
     Req: true
     Private: true  # not displayed
   award_notice_date:
     Desc: date grant was awarded
-    Type: Date
+    Type: datetime
     Req: false
     Private: true  # not displayed
   grant.project_start_date:
     Desc: project start date (of core project)
-    Type: Date
+    Type: datetime
     Req: false
     Private: true  # not displayed
   grant.project_end_date:
     Desc: project end date (of core project)
-    Type: Date
+    Type: datetime
     Req: false
     Private: false
   grant.opportunity_number:
@@ -197,7 +197,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  project.project_title:
+  project_title:
     Desc: project title
     Type: string
     Req: true
@@ -229,12 +229,12 @@ PropDefinitions:
     Private: true  # not displayed
   project.project_start_date:
     Desc: project start date (of core project)
-    Type: Date
+    Type: datetime
     Req: false
     Private: false
   project.project_end_date:
     Desc: project end date (of core project)
-    Type: Date
+    Type: datetime
     Req: false
     Private: false
   project.opportunity_number:
@@ -260,12 +260,12 @@ PropDefinitions:
     Private: false
   publication_date:
     Desc: publication date
-    Type: Date
+    Type: datetime
     Req: true
     Private: false
   cited_by:
     Desc: number of citations 
-    Type: Int
+    Type: integer
     Req: false
     Private: false
   relative_citation_ratio:

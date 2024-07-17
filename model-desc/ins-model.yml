@@ -21,7 +21,7 @@ Nodes:
       - grant_id  # this has the leading numeral and suffix
       - application_id  # not displayed
       - fiscal_year
-      - grant_title
+      - project_title
       - abstract_text  # not displayed
       - keywords  # not displayed
       - principal_investigators
