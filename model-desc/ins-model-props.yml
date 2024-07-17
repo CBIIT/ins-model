@@ -197,6 +197,11 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+  project_title:
+    Desc: project title
+    Type: string
+    Req: true
+    Private: false
   abstract_text:
     Desc: project description
     Type: string
