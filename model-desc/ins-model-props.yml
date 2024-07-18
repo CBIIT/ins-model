@@ -112,15 +112,15 @@ PropDefinitions:
     Private: true  # not displayed
   fiscal_year:
     Desc: fiscal year project_id was granted
-    Type: Int
+    Type: integer
     Req: true
     Private: false
-  project_title:
-    Desc: project title
+  grant_title:
+    Desc: grant title
     Type: string
     Req: true
     Private: false
-  abstract_text:
+  grant.abstract_text:
     Desc: project description text
     Type: string
     Req: false
@@ -130,22 +130,22 @@ PropDefinitions:
     Type: string  # list
     Req: false
     Private: true  # not displayed
-  org_name:
+  grant.org_name:
     Desc: organization of grantee
     Type: string
     Req: true
     Private: true  # not displayed
-  org_city:
+  grant.org_city:
     Desc: organization city
     Type: string
     Req: false
     Private: true  # not displayed
-  org_state:
+  grant.org_state:
     Desc: organization state
     Type: string
     Req: false
     Private: true  # not displayed
-  org_country:
+  grant.org_country:
     Desc: organization country
     Type: string
     Req: false
@@ -162,30 +162,30 @@ PropDefinitions:
     Private: false
   award_amount:
     Desc: total award money granted
-    Type: Int
+    Type: integer
     Req: true
     Private: true  # not displayed
   nci_funded_amount:
     Desc: portion of award funded by NCI
-    Type: Int
+    Type: integer
     Req: true
     Private: true  # not displayed
   award_notice_date:
     Desc: date grant was awarded
-    Type: Date
+    Type: datetime
     Req: false
     Private: true  # not displayed
-  project_start_date:
+  grant.project_start_date:
     Desc: project start date (of core project)
-    Type: Date
+    Type: datetime
     Req: false
     Private: true  # not displayed
-  project_end_date:
+  grant.project_end_date:
     Desc: project end date (of core project)
-    Type: Date
+    Type: datetime
     Req: false
     Private: false
-  opportunity_number:
+  grant.opportunity_number:
     Desc: specific nofo of this grant
     Type: string
     Req: false
@@ -201,42 +201,42 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  abstract_text:
-    Desc: project description
+  project.abstract_text:
+    Desc: project description text
     Type: string
     Req: false
     Private: false
-  org_name:
+  project.org_name:
     Desc: organization of grantee
     Type: string
     Req: true
     Private: false
-  org_city:
+  project.org_city:
     Desc: organization city
     Type: string
     Req: false
     Private: true  # not displayed
-  org_state:
+  project.org_state:
     Desc: organization state
     Type: string
     Req: false
     Private: true  # not displayed
-  org_country:
+  project.org_country:
     Desc: organization country
     Type: string
     Req: false
     Private: true  # not displayed
-  project_start_date:
+  project.project_start_date:
     Desc: project start date (of core project)
-    Type: Date
+    Type: datetime
     Req: false
     Private: false
-  project_end_date:
+  project.project_end_date:
     Desc: project end date (of core project)
-    Type: Date
+    Type: datetime
     Req: false
     Private: false
-  opportunity_number:
+  project.opportunity_number:
     Desc: specific nofo of this project
     Type: string  # list 
     Req: false
@@ -259,17 +259,17 @@ PropDefinitions:
     Private: false
   publication_date:
     Desc: publication date
-    Type: Date
+    Type: datetime
     Req: true
     Private: false
   cited_by:
     Desc: number of citations 
-    Type: Int
+    Type: integer
     Req: false
     Private: false
   relative_citation_ratio:
     Desc: relative citation ratio (RCR)
-    Type: Float
+    Type: number
     Req: false
     Private: false  
   #properties of dataset:
