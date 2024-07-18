@@ -1,17 +1,18 @@
+Handle: INS
 Version: v1.1.0
 PropDefinitions:
   #properties of program:
-  program_id:
+  program.id:
     Desc: program id
     Type: string
     Req: true
     Private: true
-  program_name:
+  program.name:
     Desc: program name
     Type: string
     Req: true
     Private: false
-  program_acronym:
+  program.acronym:
     Desc: program acronym
     Type: string
     Req: false  # not always provided by ODS
@@ -100,7 +101,7 @@ PropDefinitions:
     Req: false  # not always provided by ODS
     Private: true  # not displayed                
   #properties of grant:
-  grant_id: 
+  grant.id: 
     Desc: full id with leading numeral and suffix
     Type: string
     Req: true
@@ -115,7 +116,7 @@ PropDefinitions:
     Type: integer
     Req: true
     Private: false
-  grant_title:
+  grant.title:
     Desc: grant title
     Type: string
     Req: true
@@ -191,12 +192,12 @@ PropDefinitions:
     Req: false
     Private: true  # not displayed
   #properties of project:
-  project_id:
+  project.id:
     Desc: core id (no leading numeral or suffix)
     Type: string
     Req: true
     Private: false
-  project_title:
+  project.title:
     Desc: project title
     Type: string
     Req: true
@@ -247,7 +248,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  publication_title:
+  publication.title:
     Desc: publication title
     Type: string
     Req: true
@@ -273,7 +274,7 @@ PropDefinitions:
     Req: false
     Private: false  
   #properties of dataset:
-  dataset_title:
+  dataset.title:
     Desc: dataset title
     Type: string
     Req: true
@@ -303,7 +304,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  dataset_publication:
+  dataset.pmid:
     Desc: any publication PMIDs associated with the dataset
     Type: string  # list
     Req: false  # there may not be any associated publications
