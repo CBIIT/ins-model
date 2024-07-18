@@ -51,14 +51,14 @@ Nodes:
   publication:
     Props:
       - pmid
-      - title
+      - publication_title
       - authors
       - publication_date  # year can be derived from here for donut chart publications by year
       - cited_by  # before was citation_count
       - relative_citation_ratio
   dataset:
     Props:
-      - title
+      - dataset_title
       - description
       - dbGaP_phs  # currently we're only considering dbGaP datasets
       - dbGaP_URL  # currently we're only considering dbGaP datasets

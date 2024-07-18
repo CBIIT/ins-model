@@ -247,7 +247,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  title:
+  publication_title:
     Desc: publication title
     Type: string
     Req: true
@@ -273,7 +273,7 @@ PropDefinitions:
     Req: false
     Private: false  
   #properties of dataset:
-  title:
+  dataset_title:
     Desc: dataset title
     Type: string
     Req: true
@@ -315,7 +315,7 @@ PropDefinitions:
     Private: false
   release_date:
     Desc: dataset release date (for dbGaP, found under the Authorized Access section)
-    Type: Date
+    Type: datetime
     Req: true
     Private: false
   limitations_for_reuse:
@@ -380,11 +380,11 @@ PropDefinitions:
     Private: false
   participant_count:
     Desc: number of participants in dataset
-    Type: Int
+    Type: integer
     Req: true
     Private: false
   sample_count:
     Desc: number of samples in dataset
-    Type: Int
+    Type: integer
     Req: false  # may not be available
     Private: false
