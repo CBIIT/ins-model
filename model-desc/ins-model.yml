@@ -8,7 +8,7 @@ Nodes:
       - program.acronym
       - focus_area
       - cancer_type
-      - doc
+      - program.doc  # Division, Office, Center
       - contact_pi
       - contact_pi_email  # not displayed
       - contact_nih
@@ -63,25 +63,31 @@ Nodes:
       - description
       - dbGaP_phs  # currently we're only considering dbGaP datasets
       - dbGaP_URL  # currently we're only considering dbGaP datasets
-      - POC_name
-      - POC_email
-      - dataset.pmid  # added "dataset_" so that it's not confused with the publication node
+      - PI_name
+      - GPA  # Grant Program Administrator name; not displayed
+      - dataset.doc
+      - dataset.pmid
       - funding_source
       - release_date
       - limitations_for_reuse
       - assay_method
-      - data_type
+      - data_type  # not displayed
       - study_type
       - analyte_type
-      - disease
+      - primary_disease
       - anatomic_site
       - age
       - sex
-      - ethnicity
-      - race
+      - ethnicity  # not displayed
+      - race  # not displayed
       - sample_is_normal
       - participant_count
       - sample_count
+      - ancestry
+      - study_links
+      - related_genes
+      - related_diseases
+      - related_terms
 Relationships:
   has_publication:
     Mul: many_to_many

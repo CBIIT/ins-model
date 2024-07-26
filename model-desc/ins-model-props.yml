@@ -55,8 +55,8 @@ PropDefinitions:
         - Thyroid Cancer
     Req: true
     Private: false
-  doc:
-    Desc: division/office/center
+  program.doc:
+    Desc: division, office, center
     Type: string # list
     Req: true
     Private: false
@@ -294,15 +294,20 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  POC_name:
-    Desc: dataset point of contact name, typically the PI
-    Type: string
+  PI_name:
+    Desc: dataset primary investigator name(s)
+    Type: string  # list
     Req: true
     Private: false
-  POC_email:
-    Desc: dataset point of contact email, typically the PI's email
-    Type: string
+  GPA:
+    Desc: Grant Program Administrator name(s)
+    Type: string  # list
     Req: true
+    Private: true  # not displayed
+  dataset.doc:
+    Desc: DOC(s) GPA belongs to
+    Type: string  # list
+    Req: true 
     Private: false
   dataset.pmid:
     Desc: any publication PMIDs associated with the dataset
@@ -333,7 +338,7 @@ PropDefinitions:
     Desc: data type(s) that corresponds to the dataset study purpose (e.g., genomics, imaging)
     Type: string  # list
     Req: true
-    Private: false
+    Private: true  # not displayed
   study_type:
     Desc: study type(s) (for dbGaP, found under the Study Description section)
     Type: string  # list
@@ -344,7 +349,7 @@ PropDefinitions:
     Type: string  # list
     Req: false  # may not be available
     Private: false
-  disease:
+  primary_disease:
     Desc: primary disease(s) of study 
     Type: string  # list
     Req: true
@@ -368,12 +373,12 @@ PropDefinitions:
     Desc: participant ethnicity count
     Type: string  # list
     Req: false  # may not be available
-    Private: false
+    Private: true  # not displayed
   race:
     Desc: participant race count
     Type: string  # list
     Req: false  # may not be available
-    Private: false
+    Private: true  # not displayed
   sample_is_normal:
     Desc: sample is normal or tumor count (yes or no); sometimes sample_is_tumor is provided so careful with this
     Type: string  # list
@@ -387,5 +392,30 @@ PropDefinitions:
   sample_count:
     Desc: number of samples in dataset
     Type: integer
+    Req: false  # may not be available
+    Private: false
+  ancestry:
+    Desc: participant ancestry count
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  study_links:
+    Desc: any URLs associated to the dataset study
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  related_genes:
+    Desc: any genes related to the dataset study
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  related_diseases:
+    Desc: any diseases related to the dataset study
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  related_terms:
+    Desc: any terms related to the dataset study
+    Type: string  # list
     Req: false  # may not be available
     Private: false
