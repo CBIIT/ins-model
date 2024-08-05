@@ -3,12 +3,12 @@ Version: v1.1.0
 Nodes:
   program:
     Props:
-      - program.id
-      - program.name
-      - program.acronym
+      - program_id
+      - program_name
+      - program_acronym
       - focus_area
       - cancer_type
-      - program.doc  # Division, Office, Center
+      - program_doc  # Division, Office, Center
       - contact_pi
       - contact_pi_email  # not displayed
       - contact_nih
@@ -19,54 +19,54 @@ Nodes:
       - data_link  # not displayed
   grant:
     Props:
-      - grant.id  # this has the leading numeral and suffix
+      - grant_id  # this has the leading numeral and suffix
       - application_id  # not displayed
       - fiscal_year
-      - grant.title
-      - grant.abstract_text  # not displayed
+      - grant_title
+      - grant_abstract_text  # not displayed
       - keywords  # not displayed
       - principal_investigators
       - program_officers
       - award_amount  # not displayed
       - nci_funded_amount  # not displayed
       - award_notice_date  # not displayed
-      - grant.project_start_date  # not displayed
-      - grant.project_end_date
-      - grant.opportunity_number  # not displayed
-      - grant.org_name  # not displayed
-      - grant.org_city  # not displayed
-      - grant.org_state  # not displayed
-      - grant.org_country  # not displayed
+      - grant_start_date  # not displayed
+      - grant_end_date
+      - grant_opportunity_number  # not displayed
+      - grant_org_name  # not displayed
+      - grant_org_city  # not displayed
+      - grant_org_state  # not displayed
+      - grant_org_country  # not displayed
   project:
     Props:
-      - project.id
-      - project.title
-      - project.abstract_text
-      - project.start_date
-      - project.end_date
-      - project.opportunity_number
-      - project.org_name
-      - project.org_city  # not displayed
-      - project.org_state  # not displayed
-      - project.org_country  # not displayed
+      - project_id
+      - project_title
+      - project_abstract_text
+      - project_start_date
+      - project_end_date
+      - project_opportunity_number
+      - project_org_name
+      - project_org_city  # not displayed
+      - project_org_state  # not displayed
+      - project_org_country  # not displayed
   publication:
     Props:
       - pmid
-      - publication.title
+      - publication_title
       - authors
       - publication_date  # year can be derived from here for donut chart publications by year
       - cited_by  # before was citation_count
       - relative_citation_ratio
   dataset:
     Props:
-      - dataset.title
+      - dataset_title
       - description
       - dbGaP_phs  # currently we're only considering dbGaP datasets
       - dbGaP_URL  # currently we're only considering dbGaP datasets
       - PI_name
       - GPA  # Grant Program Administrator name; not displayed
-      - dataset.doc
-      - dataset.pmid
+      - dataset_doc
+      - dataset_pmid
       - funding_source
       - release_date
       - limitations_for_reuse

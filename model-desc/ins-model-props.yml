@@ -2,17 +2,17 @@ Handle: INS
 Version: v1.1.0
 PropDefinitions:
   #properties of program:
-  program.id:
+  program_id:
     Desc: program id
     Type: string
     Req: true
     Private: true
-  program.name:
+  program_name:
     Desc: program name
     Type: string
     Req: true
     Private: false
-  program.acronym:
+  program_acronym:
     Desc: program acronym
     Type: string
     Req: false  # not always provided by ODS
@@ -55,7 +55,7 @@ PropDefinitions:
         - Thyroid Cancer
     Req: true
     Private: false
-  program.doc:
+  program_doc:
     Desc: division, office, center
     Type: string # list
     Req: true
@@ -101,7 +101,7 @@ PropDefinitions:
     Req: false  # not always provided by ODS
     Private: true  # not displayed                
   #properties of grant:
-  grant.id: 
+  grant_id: 
     Desc: full id with leading numeral and suffix
     Type: string
     Req: true
@@ -116,12 +116,12 @@ PropDefinitions:
     Type: integer
     Req: true
     Private: false
-  grant.title:
+  grant_title:
     Desc: grant title
     Type: string
     Req: true
     Private: false
-  grant.abstract_text:
+  grant_abstract_text:
     Desc: project description text
     Type: string
     Req: false
@@ -131,22 +131,22 @@ PropDefinitions:
     Type: string  # list
     Req: false
     Private: true  # not displayed
-  grant.org_name:
+  grant_org_name:
     Desc: organization of grantee
     Type: string
     Req: true
     Private: true  # not displayed
-  grant.org_city:
+  grant_org_city:
     Desc: organization city
     Type: string
     Req: false
     Private: true  # not displayed
-  grant.org_state:
+  grant_org_state:
     Desc: organization state
     Type: string
     Req: false
     Private: true  # not displayed
-  grant.org_country:
+  grant_org_country:
     Desc: organization country
     Type: string
     Req: false
@@ -176,68 +176,68 @@ PropDefinitions:
     Type: datetime
     Req: false
     Private: true  # not displayed
-  grant.project_start_date:
+  grant_start_date:
     Desc: project start date (of core project)
     Type: datetime
     Req: false
     Private: true  # not displayed
-  grant.project_end_date:
+  grant_end_date:
     Desc: project end date (of core project)
     Type: datetime
     Req: false
     Private: false
-  grant.opportunity_number:
+  grant_opportunity_number:
     Desc: specific nofo of this grant
     Type: string
     Req: false
     Private: true  # not displayed
   #properties of project:
-  project.id:
+  project_id:
     Desc: core id (no leading numeral or suffix)
     Type: string
     Req: true
     Private: false
-  project.title:
+  project_title:
     Desc: project title
     Type: string
     Req: true
     Private: false
-  project.abstract_text:
+  project_abstract_text:
     Desc: project description text
     Type: string
     Req: false
     Private: false
-  project.org_name:
+  project_org_name:
     Desc: organization of grantee
     Type: string
     Req: true
     Private: false
-  project.org_city:
+  project_org_city:
     Desc: organization city
     Type: string
     Req: false
     Private: true  # not displayed
-  project.org_state:
+  project_org_state:
     Desc: organization state
     Type: string
     Req: false
     Private: true  # not displayed
-  project.org_country:
+  project_org_country:
     Desc: organization country
     Type: string
     Req: false
     Private: true  # not displayed
-  project.project_start_date:
+  project_start_date:
     Desc: project start date (of core project)
     Type: datetime
     Req: false
     Private: false
-  project.project_end_date:
+  project_end_date:
     Desc: project end date (of core project)
     Type: datetime
     Req: false
     Private: false
-  project.opportunity_number:
+  project_opportunity_number:
     Desc: specific nofo of this project
     Type: string  # list 
     Req: false
@@ -248,7 +248,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  publication.title:
+  publication_title:
     Desc: publication title
     Type: string
     Req: true
@@ -274,7 +274,7 @@ PropDefinitions:
     Req: false
     Private: false  
   #properties of dataset:
-  dataset.title:
+  dataset_title:
     Desc: dataset title
     Type: string
     Req: true
@@ -304,12 +304,12 @@ PropDefinitions:
     Type: string  # list
     Req: true
     Private: true  # not displayed
-  dataset.doc:
+  dataset_doc:
     Desc: DOC(s) GPA belongs to
     Type: string  # list
     Req: true 
     Private: false
-  dataset.pmid:
+  dataset_pmid:
     Desc: any publication PMIDs associated with the dataset
     Type: string  # list
     Req: false  # there may not be any associated publications
@@ -322,7 +322,7 @@ PropDefinitions:
   release_date:
     Desc: dataset release date (for dbGaP, found under the Authorized Access section)
     Type: datetime
-    Req: true
+    Req: false # may not be available
     Private: false
   limitations_for_reuse:
     Desc: dataset use restriction(s)
@@ -342,7 +342,7 @@ PropDefinitions:
   study_type:
     Desc: study type(s) (for dbGaP, found under the Study Description section)
     Type: string  # list
-    Req: true
+    Req: false  # may not be available
     Private: false
   analyte_type:
     Desc: analyte type(s) (e.g., DNA, RNA)
