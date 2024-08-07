@@ -334,18 +334,8 @@ PropDefinitions:
     Type: string  # list
     Req: false  # may not be available
     Private: false
-  data_type:
-    Desc: data type(s) that corresponds to the dataset study purpose (e.g., genomics, imaging)
-    Type: string  # list
-    Req: true
-    Private: true  # not displayed
   study_type:
     Desc: study type(s) (for dbGaP, found under the Study Description section)
-    Type: string  # list
-    Req: false  # may not be available
-    Private: false
-  analyte_type:
-    Desc: analyte type(s) (e.g., DNA, RNA)
     Type: string  # list
     Req: false  # may not be available
     Private: false
@@ -353,36 +343,6 @@ PropDefinitions:
     Desc: primary disease(s) of study 
     Type: string  # list
     Req: true
-    Private: false
-  anatomic_site:
-    Desc: tumor anatomic location(s) or sample anatomic site(s) 
-    Type: string  # list
-    Req: false  # may not be available
-    Private: false
-  age:
-    Desc: age group counts in groups of x years (x TBD)
-    Type: string  # list
-    Req: false  # may not be available
-    Private: false
-  sex:
-    Desc: participant sex count as provided
-    Type: string  # list
-    Req: false  # may not be available
-    Private: false
-  ethnicity:
-    Desc: participant ethnicity count
-    Type: string  # list
-    Req: false  # may not be available
-    Private: true  # not displayed
-  race:
-    Desc: participant race count
-    Type: string  # list
-    Req: false  # may not be available
-    Private: true  # not displayed
-  sample_is_normal:
-    Desc: sample is normal or tumor count (yes or no); sometimes sample_is_tumor is provided so careful with this
-    Type: string  # list
-    Req: false  # may not be available
     Private: false
   participant_count:
     Desc: number of participants in dataset
@@ -392,11 +352,6 @@ PropDefinitions:
   sample_count:
     Desc: number of samples in dataset
     Type: integer
-    Req: false  # may not be available
-    Private: false
-  ancestry:
-    Desc: participant ancestry count
-    Type: string  # list
     Req: false  # may not be available
     Private: false
   study_links:
