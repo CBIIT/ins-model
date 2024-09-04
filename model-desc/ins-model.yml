@@ -98,9 +98,3 @@ Relationships:
       - Src: project
         Dst: program
     Props: null
-  datasets_of_program:
-    Mul: many_to_many
-    Ends:
-      - Src: dataset
-        Dst: program
-    Props: null
