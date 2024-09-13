@@ -297,17 +297,17 @@ PropDefinitions:
   PI_name:
     Desc: dataset primary investigator name(s)
     Type: string  # list
-    Req: true
+    Req: false
     Private: false
   GPA:
     Desc: Grant Program Administrator name(s)
     Type: string  # list
-    Req: true
+    Req: false
     Private: true  # not displayed
   dataset_doc:
     Desc: DOC(s) GPA belongs to
     Type: string  # list
-    Req: true 
+    Req: false 
     Private: false
   dataset_pmid:
     Desc: any publication PMIDs associated with the dataset
@@ -327,7 +327,7 @@ PropDefinitions:
   limitations_for_reuse:
     Desc: dataset use restriction(s)
     Type: string  # list
-    Req: true
+    Req: false
     Private: false
   assay_method:
     Desc: sequencing assay method(s) (e.g., WES, WGS, RNA-Seq)
@@ -347,7 +347,7 @@ PropDefinitions:
   participant_count:
     Desc: number of participants in dataset
     Type: integer
-    Req: true
+    Req: false
     Private: false
   sample_count:
     Desc: number of samples in dataset
