@@ -1,5 +1,5 @@
 Handle: INS
-Version: v1.1.0
+Version: 2.0.0
 PropDefinitions:
   #properties of program:
   program_id:
