@@ -1,4 +1,5 @@
-Version: v1.0.1
+Handle: INS
+Version: v1.1.0
 Nodes:
   program:
     Props:
@@ -7,7 +8,7 @@ Nodes:
       - program_acronym
       - focus_area
       - cancer_type
-      - doc
+      - program_doc  # Division, Office, Center
       - contact_pi
       - contact_pi_email  # not displayed
       - contact_nih
@@ -22,40 +23,62 @@ Nodes:
       - application_id  # not displayed
       - fiscal_year
       - grant_title
-      - abstract_text  # not displayed
+      - grant_abstract_text  # not displayed
       - keywords  # not displayed
       - principal_investigators
       - program_officers
       - award_amount  # not displayed
       - nci_funded_amount  # not displayed
       - award_notice_date  # not displayed
-      - project_start_date  # not displayed
-      - project_end_date
-      - opportunity_number  # not displayed
-      - org_name  # not displayed
-      - org_city  # not displayed
-      - org_state  # not displayed
-      - org_country  # not displayed
+      - grant_start_date  # not displayed
+      - grant_end_date
+      - grant_opportunity_number  # not displayed
+      - grant_org_name  # not displayed
+      - grant_org_city  # not displayed
+      - grant_org_state  # not displayed
+      - grant_org_country  # not displayed
   project:
     Props:
       - project_id
       - project_title
-      - abstract_text
+      - project_abstract_text
       - project_start_date
       - project_end_date
-      - opportunity_number
-      - org_name
-      - org_city  # not displayed
-      - org_state  # not displayed
-      - org_country  # not displayed
+      - project_opportunity_number
+      - project_org_name
+      - project_org_city  # not displayed
+      - project_org_state  # not displayed
+      - project_org_country  # not displayed
   publication:
     Props:
       - pmid
-      - title
+      - publication_title
       - authors
       - publication_date  # year can be derived from here for donut chart publications by year
       - cited_by  # before was citation_count
       - relative_citation_ratio
+  dataset:
+    Props:
+      - dataset_title
+      - description
+      - dbGaP_phs  # currently we're only considering dbGaP datasets
+      - dbGaP_URL  # currently we're only considering dbGaP datasets
+      - PI_name
+      - GPA  # Grant Program Administrator name; not displayed
+      - dataset_doc
+      - dataset_pmid
+      - funding_source
+      - release_date
+      - limitations_for_reuse
+      - assay_method
+      - study_type
+      - primary_disease
+      - participant_count
+      - sample_count
+      - study_links
+      - related_genes
+      - related_diseases
+      - related_terms
 Relationships:
   has_publication:
     Mul: many_to_many

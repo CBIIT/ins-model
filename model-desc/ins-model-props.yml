@@ -1,5 +1,5 @@
 Handle: INS
-Version: v1.0.1
+Version: v1.1.0
 PropDefinitions:
   #properties of program:
   program_id:
@@ -55,8 +55,8 @@ PropDefinitions:
         - Thyroid Cancer
     Req: true
     Private: false
-  doc:
-    Desc: division/office/center
+  program_doc:
+    Desc: division, office, center
     Type: string # list
     Req: true
     Private: false
@@ -121,7 +121,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  grant.abstract_text:
+  grant_abstract_text:
     Desc: project description text
     Type: string
     Req: false
@@ -131,22 +131,22 @@ PropDefinitions:
     Type: string  # list
     Req: false
     Private: true  # not displayed
-  grant.org_name:
+  grant_org_name:
     Desc: organization of grantee
     Type: string
     Req: true
     Private: true  # not displayed
-  grant.org_city:
+  grant_org_city:
     Desc: organization city
     Type: string
     Req: false
     Private: true  # not displayed
-  grant.org_state:
+  grant_org_state:
     Desc: organization state
     Type: string
     Req: false
     Private: true  # not displayed
-  grant.org_country:
+  grant_org_country:
     Desc: organization country
     Type: string
     Req: false
@@ -176,17 +176,17 @@ PropDefinitions:
     Type: datetime
     Req: false
     Private: true  # not displayed
-  grant.project_start_date:
+  grant_start_date:
     Desc: project start date (of core project)
     Type: datetime
     Req: false
     Private: true  # not displayed
-  grant.project_end_date:
+  grant_end_date:
     Desc: project end date (of core project)
     Type: datetime
     Req: false
     Private: false
-  grant.opportunity_number:
+  grant_opportunity_number:
     Desc: specific nofo of this grant
     Type: string
     Req: false
@@ -202,42 +202,42 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  project.abstract_text:
+  project_abstract_text:
     Desc: project description text
     Type: string
     Req: false
     Private: false
-  project.org_name:
+  project_org_name:
     Desc: organization of grantee
     Type: string
     Req: true
     Private: false
-  project.org_city:
+  project_org_city:
     Desc: organization city
     Type: string
     Req: false
     Private: true  # not displayed
-  project.org_state:
+  project_org_state:
     Desc: organization state
     Type: string
     Req: false
     Private: true  # not displayed
-  project.org_country:
+  project_org_country:
     Desc: organization country
     Type: string
     Req: false
     Private: true  # not displayed
-  project.project_start_date:
+  project_start_date:
     Desc: project start date (of core project)
     Type: datetime
     Req: false
     Private: false
-  project.project_end_date:
+  project_end_date:
     Desc: project end date (of core project)
     Type: datetime
     Req: false
     Private: false
-  project.opportunity_number:
+  project_opportunity_number:
     Desc: specific nofo of this project
     Type: string  # list 
     Req: false
@@ -248,7 +248,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  title:
+  publication_title:
     Desc: publication title
     Type: string
     Req: true
@@ -273,3 +273,104 @@ PropDefinitions:
     Type: number
     Req: false
     Private: false  
+  #properties of dataset:
+  dataset_title:
+    Desc: dataset title
+    Type: string
+    Req: true
+    Private: false
+  description:
+    Desc: dataset description
+    Type: string
+    Req: true
+    Private: false
+  dbGaP_phs:
+    Desc: dbGaP accession number (e.g., phs001234)
+    Type: string
+    Req: true
+    Private: false
+  dbGaP_URL:
+    Desc: dbGaP study web page URL without the version part (e.g., https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001234)
+    Type: string
+    Req: true
+    Private: false
+  PI_name:
+    Desc: dataset primary investigator name(s)
+    Type: string  # list
+    Req: false
+    Private: false
+  GPA:
+    Desc: Grant Program Administrator name(s)
+    Type: string  # list
+    Req: false
+    Private: true  # not displayed
+  dataset_doc:
+    Desc: DOC(s) GPA belongs to
+    Type: string  # list
+    Req: false 
+    Private: false
+  dataset_pmid:
+    Desc: any publication PMIDs associated with the dataset
+    Type: string  # list
+    Req: false  # there may not be any associated publications
+    Private: false
+  funding_source:
+    Desc: any grant IDs funding the dataset
+    Type: string  # list
+    Req: false  # there may not be any funding sources found
+    Private: false
+  release_date:
+    Desc: dataset release date (for dbGaP, found under the Authorized Access section)
+    Type: datetime
+    Req: false # may not be available
+    Private: false
+  limitations_for_reuse:
+    Desc: dataset use restriction(s)
+    Type: string  # list
+    Req: false
+    Private: false
+  assay_method:
+    Desc: sequencing assay method(s) (e.g., WES, WGS, RNA-Seq)
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  study_type:
+    Desc: study type(s) (for dbGaP, found under the Study Description section)
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  primary_disease:
+    Desc: primary disease(s) of study 
+    Type: string  # list
+    Req: true
+    Private: false
+  participant_count:
+    Desc: number of participants in dataset
+    Type: integer
+    Req: false
+    Private: false
+  sample_count:
+    Desc: number of samples in dataset
+    Type: integer
+    Req: false  # may not be available
+    Private: false
+  study_links:
+    Desc: any URLs associated to the dataset study
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  related_genes:
+    Desc: any genes related to the dataset study
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  related_diseases:
+    Desc: any diseases related to the dataset study
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
+  related_terms:
+    Desc: any terms related to the dataset study
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false
