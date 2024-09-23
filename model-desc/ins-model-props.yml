@@ -23,9 +23,9 @@ PropDefinitions:
       value_type: list
       Enum:
         - Cancer Moonshot
+        - General
         - HIV/AIDS
         - Health Disparities
-        - No Focus Area
         - Pediatric/AYA
         - SPORE
     Req: true
@@ -35,24 +35,37 @@ PropDefinitions:
     Type:
       value_type: list
       Enum:
+        - Adrenal Gland Cancer
+        - Bile Duct Cancer
         - Bladder Cancer
         - Brain Cancer
         - Breast Cancer
-        - Broad Cancer Types
+        - CNS Cancer
         - Cervical Cancer
         - Colorectal Cancer
         - Esophageal Cancer
         - Gastric Cancer
+        - Glioblastoma
+        - Gynecologic Cancer
+        - Head and Neck Cancer
         - Kidney Cancer
         - Leukemia
         - Liver Cancer
         - Lung Cancer
         - Lymphoma
+        - Melanoma
+        - Mesothelioma
+        - Multiple Cancer Types
         - Multiple Myeloma
         - Osteosarcoma
         - Ovarian Cancer
         - Pancreas Cancer
+        - Prostate Cancer
+        - Sarcoma
+        - Skin Cancer
+        - Testicular Cancer
         - Thyroid Cancer
+        - Uterine Cancer
     Req: true
     Private: false
   program_doc:
