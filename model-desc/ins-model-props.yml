@@ -1,5 +1,5 @@
 Handle: INS
-Version: 2.0.0
+Version: 2.1.0
 PropDefinitions:
   #properties of program:
   program_id:
@@ -287,6 +287,16 @@ PropDefinitions:
     Req: false
     Private: false  
   #properties of dataset:
+  dataset_uuid:
+    Desc: INS internal dataset id
+    Type: string
+    Req: true
+    Private: true
+  dataset_source:
+    Desc: e.g., dbGaP, SRA, GEO
+    Type: string
+    Req: true
+    Private: false
   dataset_title:
     Desc: dataset title
     Type: string
@@ -297,13 +307,13 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  dbGaP_phs:
-    Desc: dbGaP accession number (e.g., phs001234)
+  datset_source_id:
+    Desc: e.g., dbGaP accession, GEO or SRA IDs
     Type: string
     Req: true
     Private: false
-  dbGaP_URL:
-    Desc: dbGaP study web page URL without the version part (e.g., https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs001234)
+  datset_source_url:
+    Desc: study web page URL
     Type: string
     Req: true
     Private: false

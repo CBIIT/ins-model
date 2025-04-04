@@ -1,5 +1,5 @@
 Handle: INS
-Version: 2.0.0
+Version: 2.1.0
 Nodes:
   program:
     Props:
@@ -59,10 +59,12 @@ Nodes:
       - relative_citation_ratio
   dataset:
     Props:
+      - dataset_uuid  # dataset internal identifier
+      - dataset_source  # e.g., dbGaP, GEO, SRA
       - dataset_title
       - description
-      - dbGaP_phs  # currently we're only considering dbGaP datasets
-      - dbGaP_URL  # currently we're only considering dbGaP datasets
+      - dataset_source_id
+      - datset_source_url
       - PI_name
       - GPA  # Grant Program Administrator name; not displayed
       - dataset_doc
