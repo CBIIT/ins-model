@@ -60,11 +60,11 @@ Nodes:
   dataset:
     Props:
       - dataset_uuid  # dataset internal identifier
-      - dataset_source  # e.g., dbGaP, GEO, SRA
+      - dataset_source_repo  # e.g., dbGaP, GEO, SRA
       - dataset_title
       - description
       - dataset_source_id
-      - datset_source_url
+      - dataset_source_url
       - PI_name
       - GPA  # Grant Program Administrator name; not displayed
       - dataset_doc

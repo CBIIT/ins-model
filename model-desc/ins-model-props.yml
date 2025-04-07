@@ -292,7 +292,7 @@ PropDefinitions:
     Type: string
     Req: true
     Private: true
-  dataset_source:
+  dataset_source_repo:
     Desc: e.g., dbGaP, SRA, GEO
     Type: string
     Req: true
@@ -307,12 +307,12 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
-  datset_source_id:
+  dataset_source_id:
     Desc: e.g., dbGaP accession, GEO or SRA IDs
     Type: string
     Req: true
     Private: false
-  datset_source_url:
+  dataset_source_url:
     Desc: study web page URL
     Type: string
     Req: true
