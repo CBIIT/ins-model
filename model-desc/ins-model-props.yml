@@ -332,10 +332,30 @@ PropDefinitions:
     Type: string  # list
     Req: false 
     Private: false
+  dataset_maximum_age_at_baseline:
+    Desc: oldest participant age at baseline
+    Type: integer
+    Req: false 
+    Private: false
+  dataset_minimum_age_at_baseline:
+    Desc: youngest participant age at baseline
+    Type: integer
+    Req: false 
+    Private: false
   dataset_pmid:
     Desc: any publication PMIDs associated with the dataset
     Type: string  # list
     Req: false  # there may not be any associated publications
+    Private: false
+  dataset_year_enrollment_ended:
+    Desc: year enrollment ended
+    Type: string
+    Req: false 
+    Private: false
+  dataset_year_enrollment_started:
+    Desc: year enrollment started
+    Type: string
+    Req: false 
     Private: false
   funding_source:
     Desc: any grant IDs funding the dataset

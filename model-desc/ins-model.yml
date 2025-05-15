@@ -68,7 +68,11 @@ Nodes:
       - PI_name
       - GPA  # Grant Program Administrator name; not displayed
       - dataset_doc
+      - dataset_maximum_age_at_baseline
+      - dataset_minimum_age_at_baseline
       - dataset_pmid
+      - dataset_year_enrollment_ended
+      - dataset_year_enrollment_started
       - funding_source
       - release_date
       - limitations_for_reuse
