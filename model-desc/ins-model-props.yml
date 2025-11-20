@@ -415,6 +415,9 @@ PropDefinitions:
     Private: false
   related_terms:
     Desc: any terms related to the dataset study
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false    
   # Properties of file:
   file_id:
     Desc: Unique file identifier (UUID)
