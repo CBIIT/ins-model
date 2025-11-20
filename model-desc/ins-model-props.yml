@@ -414,6 +414,48 @@ PropDefinitions:
     Private: false
   related_terms:
     Desc: any terms related to the dataset study
-    Type: string  # list
-    Req: false  # may not be available
+  # Properties of file:
+  file_id:
+    Desc: Unique file identifier (UUID)
+    Type: string
+    Req: true
+    Private: false
+  file_name:
+    Desc: The literal label for an electronic data file.
+    Term:
+      - Origin: caDSR
+        Code: "11284037"
+        Value: Electronic Data File Name
+        Version: "2.0"
+    Type: string
+    Req: true
+    Private: false
+  file_type:
+    Desc: File extension/format
+    Term:
+      - Origin: caDSR
+        Code: "11416926"
+        Value: Electronic Data File Format Type
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  file_url:
+    Desc: The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.
+    Term:
+      - Origin: caDSR
+        Code: "11556141"
+        Value: Electronic File Pathname Text
+        Version: "2.00"
+    Type: string
+    Req: true
+    Private: false
+  access_level:
+    Desc: Access control level
+    Type:
+      value_type: string
+      Enum:
+        - Open
+        - Controlled
+    Req: true
     Private: false
