@@ -290,6 +290,7 @@ PropDefinitions:
   dataset_uuid:
     Desc: INS internal dataset id
     Type: string
+    Key: true
     Req: true
     Private: true
   dataset_source_repo:
@@ -418,6 +419,7 @@ PropDefinitions:
   file_id:
     Desc: Unique file identifier (UUID)
     Type: string
+    Key: true
     Req: true
     Private: false
   file_name:
