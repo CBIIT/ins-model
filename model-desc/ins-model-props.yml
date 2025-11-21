@@ -5,6 +5,7 @@ PropDefinitions:
   program_id:
     Desc: program id
     Type: string
+    Key: true
     Req: true
     Private: true
   program_name:
@@ -117,6 +118,7 @@ PropDefinitions:
   grant_id: 
     Desc: full id with leading numeral and suffix
     Type: string
+    Key: true
     Req: true
     Private: false
   application_id:
@@ -208,6 +210,7 @@ PropDefinitions:
   project_id:
     Desc: core id (no leading numeral or suffix)
     Type: string
+    Key: true
     Req: true
     Private: false
   project_title:
@@ -259,6 +262,7 @@ PropDefinitions:
   pmid:
     Desc: PubMed ID
     Type: string
+    Key: true    
     Req: true
     Private: false
   publication_title:
@@ -290,6 +294,7 @@ PropDefinitions:
   dataset_uuid:
     Desc: INS internal dataset id
     Type: string
+    Key: true
     Req: true
     Private: true
   dataset_source_repo:
@@ -416,4 +421,50 @@ PropDefinitions:
     Desc: any terms related to the dataset study
     Type: string  # list
     Req: false  # may not be available
+    Private: false    
+  # Properties of file:
+  file_id:
+    Desc: Unique file identifier (UUID)
+    Type: string
+    Key: true
+    Req: true
+    Private: false
+  file_name:
+    Desc: The literal label for an electronic data file.
+    Term:
+      - Origin: caDSR
+        Code: "11284037"
+        Value: Electronic Data File Name
+        Version: "2.0"
+    Type: string
+    Req: true
+    Private: false
+  file_type:
+    Desc: File extension/format
+    Term:
+      - Origin: caDSR
+        Code: "11416926"
+        Value: Electronic Data File Format Type
+        Version: "1.00"
+    Type: string
+    Req: false
+    Private: false
+  file_url:
+    Desc: The specification of a node (file or directory) in a hierarchical file system where an electronic file is located.
+    Term:
+      - Origin: caDSR
+        Code: "11556141"
+        Value: Electronic File Pathname Text
+        Version: "2.00"
+    Type: string
+    Req: true
+    Private: false
+  access_level:
+    Desc: Access control level
+    Type:
+      value_type: string
+      Enum:
+        - Open
+        - Controlled
+    Req: true
     Private: false

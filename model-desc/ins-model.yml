@@ -1,5 +1,5 @@
 Handle: INS
-Version: 2.1.0
+Version: 2.2.0
 Nodes:
   program:
     Props:
@@ -85,6 +85,13 @@ Nodes:
       - related_genes
       - related_diseases
       - related_terms
+  file:
+    Props:
+      - file_id
+      - file_name
+      - file_type
+      - file_url
+      - access_level
 Relationships:
   has_publication:
     Mul: many_to_many
@@ -103,4 +110,10 @@ Relationships:
     Ends:
       - Src: project
         Dst: program
+    Props: null
+  files_of_dataset:
+    Mul: many_to_one
+    Ends:
+      - Src: file
+        Dst: dataset
     Props: null
