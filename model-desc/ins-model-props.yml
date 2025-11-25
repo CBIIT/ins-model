@@ -312,6 +312,11 @@ PropDefinitions:
     Type: string
     Req: true
     Private: false
+  experimental_approaches:
+    Desc: experimental approaches used in dataset
+    Type: string
+    Req: false
+    Private: false
   dataset_source_id:
     Desc: e.g., dbGaP accession, GEO or SRA IDs
     Type: string
@@ -321,6 +326,11 @@ PropDefinitions:
     Desc: study web page URL
     Type: string
     Req: true
+    Private: false
+  institute:
+    Desc: institute contributing the dataset
+    Type: string
+    Req: false
     Private: false
   PI_name:
     Desc: dataset primary investigator name(s)
