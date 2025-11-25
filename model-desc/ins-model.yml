@@ -70,6 +70,8 @@ Nodes:
       - PI_name
       - GPA  # Grant Program Administrator name; not displayed
       - dataset_doc
+      - POC_name # not displayed
+      - POC_email # not displayed
       - dataset_maximum_age_at_baseline
       - dataset_minimum_age_at_baseline
       - dataset_pmid

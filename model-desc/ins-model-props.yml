@@ -347,6 +347,16 @@ PropDefinitions:
     Type: string  # list
     Req: false 
     Private: false
+  POC_name:
+    Desc: dataset point of contact name
+    Type: string
+    Req: false 
+    Private: true # not displayed
+  POC_email:
+    Desc: dataset point of contact email
+    Type: string
+    Req: false 
+    Private: true # not displayed
   dataset_maximum_age_at_baseline:
     Desc: oldest participant age at baseline
     Type: integer
