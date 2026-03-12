@@ -441,7 +441,12 @@ PropDefinitions:
     Desc: any terms related to the dataset study
     Type: string  # list
     Req: false  # may not be available
-    Private: false    
+    Private: false  
+  dataset_storage_distribution:
+    Desc: external platform or repository where the dataset is stored
+    Type: string  # list
+    Req: false  # may not be available
+    Private: false      
   # Properties of file:
   file_id:
     Desc: Unique file identifier (UUID)
