@@ -89,6 +89,7 @@ Nodes:
       - related_genes
       - related_diseases
       - related_terms
+      - dataset_storage_distribution
   file:
     Props:
       - file_id
