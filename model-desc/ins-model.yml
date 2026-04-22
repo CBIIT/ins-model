@@ -1,5 +1,5 @@
 Handle: INS
-Version: 2.2.0
+Version: 2.4.0
 Nodes:
   program:
     Props:
@@ -97,6 +97,22 @@ Nodes:
       - file_type
       - file_url
       - access_level
+  resource:
+    Props:
+      - resource_uuid # resource internal identifier
+      - resource_source_id  # not displayed
+      - resource_title
+      - resource_short_description
+      - resource_source_url
+      - resource_tool_type
+      - resource_tool_subtype
+      - resource_research_area
+      - resource_research_type
+      - resource_access
+      - resource_doc
+      - resource_poc_name
+      - resource_poc_email
+      - resource_full_description
 Relationships:
   has_publication:
     Mul: many_to_many
