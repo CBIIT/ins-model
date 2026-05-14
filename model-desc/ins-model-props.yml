@@ -456,7 +456,7 @@ PropDefinitions:
     Private: true  # not displayed
   resource_source_id:
     Desc: legacy source id
-    Type: integer
+    Type: string
     Req: false
     Private: true  # not displayed
   resource_title:
