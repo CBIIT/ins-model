@@ -1,5 +1,5 @@
 Handle: INS
-Version: 2.1.0
+Version: 2.4.0
 PropDefinitions:
   #properties of program:
   program_id:
@@ -446,6 +446,78 @@ PropDefinitions:
     Desc: external platform or repository where the dataset is stored
     Type: string  # list
     Req: false  # may not be available
+    Private: false
+  # Properties of resource:
+  resource_uuid:
+    Desc: resource unique identifier
+    Type: string
+    Key: true
+    Req: true
+    Private: true  # not displayed
+  resource_source_id:
+    Desc: legacy source id
+    Type: string
+    Req: false
+    Private: true  # not displayed
+  resource_title:
+    Desc: resource title
+    Type: string
+    Req: true
+    Private: false
+  resource_short_description:
+    Desc: short description of the resource, may contain HTML formatting
+    Type: string
+    Req: false
+    Private: false
+  resource_source_url:
+    Desc: resource link URL
+    Type: string
+    Req: true
+    Private: false
+  resource_tool_type:
+    Desc: tool type(s), semicolon-separated
+    Type: string  # list
+    Req: true
+    Private: false
+  resource_tool_subtype:
+    Desc: tool subtype(s), semicolon-separated
+    Type: string  # list
+    Req: false
+    Private: false
+  resource_research_area:
+    Desc: research area(s), semicolon-separated
+    Type: string  # list
+    Req: true
+    Private: false
+  resource_research_type:
+    Desc: research type(s), semicolon-separated
+    Type: string  # list
+    Req: false
+    Private: false
+  resource_access:
+    Desc: access control level
+    Type: string
+    Req: false
+    Private: false
+  resource_doc:
+    Desc: NCI division, office, or center, semicolon-separated
+    Type: string  # list
+    Req: false
+    Private: false
+  resource_poc_name:
+    Desc: point of contact name(s), semicolon-separated
+    Type: string  # list
+    Req: false
+    Private: false
+  resource_poc_email:
+    Desc: point of contact email(s), semicolon-separated
+    Type: string  # list
+    Req: false
+    Private: false
+  resource_full_description:
+    Desc: full description of the resource, may contain HTML formatting
+    Type: string
+    Req: false
     Private: false
   # Properties of file:
   file_id:
