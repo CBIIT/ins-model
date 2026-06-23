@@ -1,5 +1,6 @@
 name: Model Validate and Build
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
