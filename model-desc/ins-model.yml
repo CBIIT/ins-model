@@ -1,5 +1,5 @@
 Handle: INS
-Version: 2.4.0
+Version: 2.5.0
 Nodes:
   program:
     Props:
@@ -17,6 +17,7 @@ Nodes:
       - award
       - program_link
       - data_link  # not displayed
+      - program_active_status
   grant:
     Props:
       - grant_id  # this has the leading numeral and suffix

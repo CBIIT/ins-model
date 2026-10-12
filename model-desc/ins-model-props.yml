@@ -1,5 +1,5 @@
 Handle: INS
-Version: 2.4.0
+Version: 2.5.0
 PropDefinitions:
   #properties of program:
   program_id:
@@ -113,7 +113,12 @@ PropDefinitions:
     Desc: URL to the program's data
     Type: string
     Req: false  # not always provided by ODS
-    Private: true  # not displayed                
+    Private: true  # not displayed  
+  program_active_status:
+    Desc: status of NCI support for the program. Usually "Active" or "Inactive"
+    Type: string
+    Req: false
+    Private: false              
   #properties of grant:
   grant_id: 
     Desc: full id with leading numeral and suffix
