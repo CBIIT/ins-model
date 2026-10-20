@@ -1,5 +1,5 @@
 Handle: INS
-Version: 2.4.0
+Version: 2.5.0
 PropDefinitions:
   #properties of program:
   program_id:
@@ -24,6 +24,8 @@ PropDefinitions:
       value_type: list
       Enum:
         - Cancer Moonshot
+        - Clinical Networks
+        - DCC
         - General
         - HIV/AIDS
         - Health Disparities
@@ -39,16 +41,23 @@ PropDefinitions:
         - Adrenal Gland Cancer
         - Bile Duct Cancer
         - Bladder Cancer
+        - Blood Cancer
+        - Bone Cancer
         - Brain Cancer
         - Breast Cancer
         - CNS Cancer
+        - Cancer Moonshot
         - Cervical Cancer
         - Colorectal Cancer
         - Esophageal Cancer
+        - Ewing Sarcoma
         - Gastric Cancer
         - Glioblastoma
         - Gynecologic Cancer
+        - HIV/AIDS
         - Head and Neck Cancer
+        - Hematologic Cancer
+        - Kaposi Sarcoma
         - Kidney Cancer
         - Leukemia
         - Liver Cancer
@@ -58,15 +67,20 @@ PropDefinitions:
         - Mesothelioma
         - Multiple Cancer Types
         - Multiple Myeloma
+        - Neuroblastoma
         - Osteosarcoma
         - Ovarian Cancer
         - Pancreas Cancer
+        - Pediatric/AYA
         - Prostate Cancer
+        - Rectal Cancer
+        - Rhabdomyosarcoma
         - Sarcoma
         - Skin Cancer
         - Testicular Cancer
         - Thyroid Cancer
         - Uterine Cancer
+        - Wilms Tumor
     Req: true
     Private: false
   program_doc:
@@ -113,7 +127,12 @@ PropDefinitions:
     Desc: URL to the program's data
     Type: string
     Req: false  # not always provided by ODS
-    Private: true  # not displayed                
+    Private: true  # not displayed  
+  program_active_status:
+    Desc: status of NCI support for the program. Usually "Active" or "Inactive"
+    Type: string
+    Req: false
+    Private: false              
   #properties of grant:
   grant_id: 
     Desc: full id with leading numeral and suffix
